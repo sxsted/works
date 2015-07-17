@@ -122,8 +122,10 @@ h2.spa
     }
     #blog_title
     {
-    height:100%;
+    white-space:nowrap;
+    overflow:hidden;
     text-overflow:ellipsis;
+    width:278px;
     }
 }
 #blog_space
