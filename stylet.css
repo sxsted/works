@@ -10,13 +10,13 @@ body,html
 #ptype
 {
     z-index:999;
-    position:relative;
     background:white;
     width:100%;
     text-align:center;
     font-size:100px;
     font-family:sans-serif;
-    height:500px;
+    margin-top:-500px;
+
 }
 @media screen and (max-width:500px)
 {
@@ -30,15 +30,16 @@ body,html
 
     }
 }
-#top
-{
+    #top
+    {
     box-sizing:border-box;
     background:black;
     margin:0px;
     padding:0px;
     z-index:999;
     width:100%;
-}
+    max-height:100%;
+    }
 /*
 #idd2
 {
@@ -76,8 +77,12 @@ body,html
     #top
     {
         box-sizing:border-box;
-        height:auto;
-        display:relative;
+        height:43px;
+        display:inline-block;
+        min-width:100%;
+        width:100%;
+        position:relative;
+        background:#C63300;
     }
 }
 
@@ -94,7 +99,7 @@ h1.ha
     padding:0px;
     color:white;
     font-size:30px;
-    background:#C63300;
+    height:43px;
 }
 h2.spa
 {
@@ -107,18 +112,18 @@ h2.spa
 {
     h1.ha
     {
-    display:inline-block;
     position:absolute;
     font-family:sans-serif;
-    padding:0px;
-    margin:0px;
-    width:325px;
-    height:43px;
-    font-size:auto;
-    color:white;
-    font-size:25px;
-    background:#C63300;
+    color:black;
     text-align:center;
+    padding:5px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    }
+    #blog_title
+    {
+    height:100%;
+    text-overflow:ellipsis;
     }
 }
 #blog_space
@@ -138,6 +143,7 @@ h2.spa
     }
     #blog_space
     {
+    position:relative;
     margin:0px;
     padding:0px;
     background-color:#DAA520;
@@ -157,7 +163,7 @@ h2
     position:relative;
     margin:auto;
     min-width:100%;
-    height:calc(100% - 71px);
+    height:calc(100% - 72px);
     box-sizing:border-box;
 }
 
@@ -316,13 +322,12 @@ transition:all 0.3s ease-in;
     overflow:scroll;
     overflow-x:hidden;
     margin-left:0px;
-    padding-left:10px;
+    padding:0px;
     font-family:sans-serif;
     transition:all 0.3s ease-in;
     background-size:100%;
     background-image:50%;
     min-width:100%;
-
     }
     
 
