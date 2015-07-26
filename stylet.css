@@ -172,7 +172,7 @@ h2
 
 .slide-menu
 {
-    background: hsla(240,0%,50%,0.6); 
+    background: white; 
     position:absolute;
     height:500px;
     font-family:sans-serif;
@@ -537,42 +537,3 @@ left:500px;
 {
 left:500px;
 }
-/*
-@import "lesshat";
-.page-wrapper
-{
-position:relative;
-        
-}
-.slide-menu
-{
-position:absolute;
-top:0px;
-bottom:0;
-height:100%;
-left:-280px;
-width:280px;
-background-color:gray;
-transition:all 0.5s ease-in;
-&.slide-in-left{
-left:0px;
-}
-.menu-item{
-    li{
-        margin-bottom:5px;
-        border-bottom:1px solid #000;
-        padding:5px 0;
-      }
-}
-}
-
-    
-    
-    .content{
-    margin-left:0px;
-    transition:all 0.5s ease-in;
-    &.slide-in-left{
-    margin-left:280px;
-    }
-}
-*/
