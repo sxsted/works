@@ -50,7 +50,7 @@
             if (getCookie("lastTime") !== dTime[0]) {
                 setCk(dTime[0]);
             }
-            document.querySelector('.mmenu').scrollTop = 0;
+            document.querySelector('.mmenu').scrollTop = pos[0];
             document.getElementById('idd').innerHTML = out + out1;
         }
 
