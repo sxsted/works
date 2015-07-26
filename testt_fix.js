@@ -2,9 +2,8 @@
         pos = [],
         nu1,
         titleChange = document.getElementById('ge');
-    titleChange.addEventListener('onclick', mytitle);
+        titleChange.addEventListener('onclick', mytitle);
 
-    document.querySelector('.mmenu').scrollTop = 0;
     function mytitle(tt) {
         var hi = document.getElementById('ptype');
         script = document.createElement("script");
@@ -51,6 +50,7 @@
             if (getCookie("lastTime") !== dTime[0]) {
                 setCk(dTime[0]);
             }
+            document.querySelector('.mmenu').scrollTop = 0;
             document.getElementById('idd').innerHTML = out + out1;
         }
 
