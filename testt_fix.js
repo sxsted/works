@@ -4,6 +4,7 @@
         titleChange = document.getElementById('ge');
     titleChange.addEventListener('onclick', mytitle);
 
+    document.querySelector('.mmenu').scrollTop = 0;
     function mytitle(tt) {
         var hi = document.getElementById('ptype');
         script = document.createElement("script");
